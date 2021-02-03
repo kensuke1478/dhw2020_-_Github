@@ -1,0 +1,289 @@
+@charset "utf-8";
+/*  common
+-----------------------------*/
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+header{
+    color: #FFFFFFEB;
+    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    line-height: 1.615;
+    font-size: 13px;
+    background-color: #BC8F8F87;
+    position: relative;
+}
+.nav{
+    font-size: 80px;
+    font-family: '源ノ角ゴシック JP', sans-serif;
+    text-align: center;
+    margin: 0 0 24px 0;
+    font-size: 80px;
+    font-family: '源ノ角ゴシック JP', sans-serif;
+    text-align: left;
+    margin: 0 0 24px 0;
+    font-size: 16px;
+    text-align: center;
+    margin: 0 0 64px 0;
+    width: 265px;
+    height: 45px;
+    background-color: #ffffff;
+    font-size: 16px;
+    font-family: '源ノ角ゴシック', sans-serif;
+    color: #ffffff;
+    margin: 0 auto 0 auto;
+    position: relative;
+    opacity: 1;
+    /* トランジション */
+    transition-property: background-color opacity;
+    transition-duration: 1s;
+    transition-delay: 0;
+    transition-timing-function: ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    position: absolute;
+    top: 17px;
+    right: 60px;
+    /* トランジション */
+    transition-property: right;
+    transition-duration: 0.6s;
+    transition-delay: 0;
+    transition-timing-function: ease-out;
+    opacity: 0.6;
+    right: 46px;
+}
+
+/*  animation
+--------------------------------*/
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes bottom-up{
+    0%{
+        bottom: -64px;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+
+/*  header
+--------------------------------*/
+header{
+    width: 100vw;
+    height: 100vh;
+    background-color: #BC8F8F87;
+    background-size: cover;
+    position: relative;
+    padding: 14% 0 0 0;
+    /* アニメーション */
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+header nav{
+    position: absolute;
+    bottom: -64px;
+    left: 0;
+    width: 100%;
+    height: 64px;
+    background: rgba(255, 255, 255, 0.8);
+    /* アニメーション */
+    animation-name: bottom-up;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto 0 auto;
+}
+header h2 img{
+    width: 100%;
+}
+header .nav-list{
+    display: flex;
+    justify-content: space-between;
+    width: 540px;
+    height: 64px;
+}
+header .nav-list li{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    padding: 0 9px 0 9px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+}
+header .nav-list .active{
+    color: #cccccc;
+    border-bottom: 2px solid #CCCCCC;
+}
+header .nav-list .active a{
+    color: #cccccc;
+}
+
+header .icon{
+    position: absolute;
+    top: 35px;
+    right: 44px;
+}
+header .icon li{
+    margin: 0 0 66px 0;
+}
+header .name{
+    width: 74%;
+    height: 64%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: url(../img/main.png) no-repeat center center;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header h1{
+    font-size: 80px;
+    line-height: 1.45;
+    text-align: center;
+}
+header h2{
+    width: 453px;
+    height: 457px;
+   position: absolute;
+   bottom: -280px;
+   right: 0;
+   left: 0;
+   margin: 0 auto 0 auto;
+}
+header h2 img{
+    border-radius: 50%;
+}
+
+/*  .main
+--------------------------------*/
+.profile h1{
+    font-size: 40px;
+    width: 457px;
+    position: absolute; 
+    bottom: -200px; 
+}
+.profile h2{
+    width: 150px;
+    height: 150px;
+    background: url(../img/パレット.png) no-repeat;
+}
+.profile p{
+    size: 36px;
+    width: 576px;
+    height: 208px;
+    top: 400px;
+    right: 200px;
+    bottom: 200px;
+    left: 250px;
+    text-indent: -1em;
+    padding-left: -2em;
+    margin: auto;
+    display: flex;
+    background-size: contain;
+    justify-content: center;
+    text-align: center;
+}
+.skill h2{
+    font-size: 40px;
+    width: 500px;
+    position: absolute; 
+    bottom: -330px; 
+}
+.skill li{
+    background: url(../img/グラフ書き出し.png) no-repeat center center;
+    width: 880px;
+    height: 660px;
+    right: 200px;
+}
+.Hobby h3{
+font-size: 40px;
+width: 195px;
+height: 87px;
+}
+.Hobby p{
+size: 36px;
+width: 576px;
+height: 208px;
+top: 400px;
+right: 200px;
+bottom: 200px;
+left: 250px;
+text-indent: -1em;
+padding-left: -2em;
+margin: auto;
+display: flex;
+background-size: contain;
+justify-content: center;
+text-align: center;
+}
+.Hobby ul{
+    background: url(../img/趣味写真.png) no-repeat center center;
+    width: 366px;
+    height: 301px;
+}
+.section ul{
+    background: url(../img/趣味写真2.png) no-repeat center center;
+    width: 366px;
+    height: 301px;
+}
+/*  footer
+--------------------------------*/
+footer{
+    padding: 80px 0;
+    width: 1920px;
+    height: 540px;
+    background-color: #BC8F8F87;
+    background-size: cover;
+    position: relative;
+    padding: 14% 0 0 0;
+}
+footer h1 img{
+    width: 20%;
+    min-width: 320PX;
+    margin: 0 25%;
+}
+footer h1 img img{
+    width: 10%;
+    padding: 5% 2.5%;
+}
+footer h2{
+    size: 20px;
+    top:25%;
+    width: 96px;
+    margin: 0 32.5%;
+}
+footer h3{
+    size: 25px;
+    width: 20%;
+    margin: 0 60%;
+    bottom: 30%;
+    top: 200px;
+    right: 200px;
+    height: 200vh;
+}

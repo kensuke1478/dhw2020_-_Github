@@ -243,6 +243,12 @@ header h2 img{
     border-top: 10px solid #BC8F8F;
     margin: 0 auto;
 }
+.hobby{
+    width: 100%;
+    display: flex;
+    position: relative;
+
+}
 .Hobby h3{
 font-size: 40px;
 width: 195px;
@@ -252,27 +258,15 @@ height: 87px;
 size: 36px;
 width: 576px;
 height: 208px;
-top: 400px;
-right: 200px;
-bottom: 200px;
-left: 250px;
 text-indent: -1em;
 padding-left: -2em;
-margin: auto;
-display: flex;
-background-size: contain;
-justify-content: center;
-text-align: center;
 }
-.Hobby ul{
-    background: url(../img/趣味写真.png) no-repeat center center;
-    width: 366px;
-    height: 301px;
-}
-.section ul{
-    background: url(../img/趣味写真2.png) no-repeat center center;
-    width: 366px;
-    height: 301px;
+.hobby div{
+    width: 866px;
+    padding: 92px 120px;
+    border-top: 10px solid #BC8F8F;
+    margin: 0 auto;
+    border-bottom: 10px solid #BC8F8F;
 }
 /*  footer
 --------------------------------*/
